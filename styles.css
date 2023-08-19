@@ -1,0 +1,276 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background color to the whole page */
+body {
+    background-color: #fff; /* Set the desired background color for the whole page */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Basic styling */
+.header-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Set your desired background color */
+    border-bottom: 1px solid #ddd; /* Add a border at the bottom of the header */
+}
+
+.profile-photo {
+    max-width: 200px; /* Adjust photo size for smaller screens */
+    width: 100%; /* Make the photo responsive */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Add spacing between photo and name */
+    transition: max-width 0.3s ease-in-out; /* Add a smooth transition for the photo size */
+}
+
+.name-job {
+    text-align: center;
+    transition: text-align 0.3s ease-in-out; /* Add a smooth transition for text alignment */
+}
+
+.name {
+    font-size: 24px;
+    margin-top: 10px; /* Add spacing between photo and name */
+    transition: font-size 0.3s ease-in-out; /* Add a smooth transition for font size */
+}
+
+.job-title {
+    font-size: 16px;
+    margin-top: 5px; /* Add spacing between name and job title */
+    transition: font-size 0.3s ease-in-out; /* Add a smooth transition for font size */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: inline-block;
+}.summary-section {
+    margin: 0 auto; /* Adjust the top margin to move it closer to the header */
+    padding: 20px;
+    background-color: #f9f9f9; /* Set your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.summary-window {
+    background-color: #fff; /* Set background color for the summary window */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center the content */
+}
+.bio-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Set background color for the biography section */
+}
+.bac-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Set background color for the biography section */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.blurb-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Set background color for the blurb window */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.skills-achievements-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Set background color for the skills and achievements windows */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.skills-window,
+.achievements-window {
+    flex: 1; /* Occupy 50% width for each window */
+    padding: 20px; /* Add padding to the windows */
+}
+
+.skills-window {
+    margin-right: 20px; /* Add spacing between the two windows */
+    border-right: 1px solid #ddd; /* Add a vertical border between windows */
+}
+
+.skills h2,
+.achievements h2 {
+    font-weight: bold; /* Make headings bold */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Add spacing below the headings */
+}
+
+.sub-skills {
+    margin-left: 20px;
+    list-style: disc;
+    font-size: 16px;
+}
+
+
+.contact-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Set the background color for the contact window */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.contact-window {
+    background-color: #fff; /* Set background color for the contact window */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center the content */
+}
+
+.footer-section {
+    margin-top: 40px; /* Adjust the margin as needed */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    margin: 5px;
+}
+
+.proudly-canadian p {
+    font-size: 14px; /* Adjust the size as needed */
+}
+
+/* ... Other styling ... */
+/* ... Other styles ... */
+/* ... Other styles ... */
+
+/* ... Other styles ... */
+
+/* ... Other styles ... */
+
+/* Apply window styling */
+.window {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    text-align: center; /* Center the content */
+}
+
+/* Media query for bigger screens (desktop) */
+@media screen and (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content-section {
+        display: flex; /* Display the sections side by side */
+        align-items: center; /* Center align content vertically */
+        width: 100%; /* Expand to full width */
+        margin: 0 auto; /* Center align content horizontally */
+    }
+
+    .left-section {
+        flex: 1; /* Distribute space equally between sections */
+        padding: 0 20px; /* Add padding to each section */
+        text-align: left; /* Align content to the left */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align children to the left */
+    }
+
+    .right-section {
+        flex: 1; /* Distribute space equally between sections */
+        padding: 0 20px; /* Add padding to each section */
+        text-align: right; /* Align content to the right */
+    }
+
+    .profile-photo {
+        max-width: 200px; /* Adjust the max width for the photo */
+        margin-bottom: 0;
+        transition: max-width 0.3s ease-in-out;
+    }
+
+    .name {
+        font-size: 40px; /* Adjust font size for bigger screens */
+        font-weight: bold; /* Add font weight */
+        margin-top: 10px; /* Add spacing above the name */
+    }
+
+    .job-title {
+        font-size: 24px; /* Adjust font size for bigger screens */
+    }
+
+
+    .social-icons {
+        margin-top: 10px; /* Add spacing above social icons */
+        display: flex;
+        align-items: center; /* Align icons vertically */
+    }
+
+    .social-icon {
+        width: 40px; /* Set the desired width for the social icons */
+        height: 40px; /* Set the desired height for the social icons */
+        margin-right: 10px; /* Add spacing between icons */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%; /* Add rounded corners for circular icons */
+        background-color: #f9f9f9; /* Add a background color to the icons */
+    }
+
+ /* ... Other styles ... */
+
+    .social-icons {
+        margin-top: 10px; /* Add spacing above social icons */
+        display: flex;
+        align-items: center; /* Align icons vertically */
+    }
+
+    .social-icon {
+        width: 40px; /* Set the desired width for the social icons */
+        height: 40px; /* Set the desired height for the social icons */
+        margin-right: 10px; /* Add spacing between icons */
+    }
+
+    .social-icon img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Scale down the image to fit within the specified dimensions */
+    }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+    .social-icons .social-icon {
+        width: 30px; /* Adjust the width for smaller screens */
+        height: 30px; /* Adjust the height for smaller screens */
+    }
+}
