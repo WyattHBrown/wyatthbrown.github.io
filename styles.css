@@ -1,14 +1,15 @@
+/*VestBot CA 2023, Written and hosted by Wyatt Henri Brown for use on the wyattbrown.ca website. */
 /* Reset some default styles for consistency */
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
-
 /* Apply background color to the whole page */
 body {
     background-color: #fff; /* Set the desired background color for the whole page */
     font-family: 'Open Sans', sans-serif;
 }
+
 
 /* Basic styling */
 .header-content {
@@ -17,7 +18,7 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #f9f9f9; /* Set your desired background color */
-    border-bottom: 1px solid #ddd; /* Add a border at the bottom of the header */
+    border-bottom: 0px solid #f9f9f9; /* Add a border at the bottom of the header */
 }
 
 .profile-photo {
@@ -33,15 +34,14 @@ body {
     text-align: center;
     transition: text-align 0.3s ease-in-out; /* Add a smooth transition for text alignment */
 }
-
 .name {
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 10px; /* Add spacing between photo and name */
+    font-weight: bold; /* Add font weight */
     transition: font-size 0.3s ease-in-out; /* Add a smooth transition for font size */
 }
-
 .job-title {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 5px; /* Add spacing between name and job title */
     transition: font-size 0.3s ease-in-out; /* Add a smooth transition for font size */
 }
@@ -51,18 +51,19 @@ body {
     justify-content: center;
     margin-top: 20px;
 }
-
 .social-icons a {
     margin-right: 10px;
     display: inline-block;
-}.summary-section {
+}
+
+
+.summary-section {
     margin: 0 auto; /* Adjust the top margin to move it closer to the header */
     padding: 20px;
     background-color: #f9f9f9; /* Set your desired background color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 10px; /* Add rounded corners */
 }
-
 .summary-window {
     background-color: #fff; /* Set background color for the summary window */
     padding: 20px;
@@ -70,6 +71,8 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     text-align: center; /* Center the content */
 }
+
+
 .bio-section {
     margin: 20px auto;
     padding: 20px;
@@ -83,6 +86,7 @@ body {
     border-radius: 10px; /* Add rounded corners */
 }
 
+
 .blurb-section {
     margin: 20px auto;
     padding: 20px;
@@ -91,34 +95,43 @@ body {
     border-radius: 10px; /* Add rounded corners */
 }
 
+
 .skills-achievements-section {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff; /* Set background color for the skills and achievements windows */
+    background-color: #f3fffc; /* Set background color for the skills and achievements windows */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 10px; /* Add rounded corners */
+    border: 0px solid #ddd; /* Add border to the entire section */
 }
 
 .skills-window,
 .achievements-window {
-    flex: 1; /* Occupy 50% width for each window */
+    flex: 1; /* Occupy equal width for both windows */
     padding: 20px; /* Add padding to the windows */
 }
-
 .skills-window {
-    margin-right: 20px; /* Add spacing between the two windows */
-    border-right: 1px solid #ddd; /* Add a vertical border between windows */
+    border-right: 1px solid #9a9a9a; /* Add a vertical border to the right */
+    margin-right: 20px; /* Add margin to the right for spacing */
+}
+
+.achievements {
+    margin-top: 15px; /* Add spacing between heading and the achievements */
+}
+.achievements li {
+    margin-bottom: 20px; /* Add spacing between individual achievements */
 }
 
 .skills h2,
 .achievements h2 {
     font-weight: bold; /* Make headings bold */
-    font-size: 24px; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Add spacing below the headings */
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-bottom: 14px; /* Add spacing below the headings */
+    margin-bottom: 15px; /* Add spacing between individual achievements */
 }
-
 .sub-skills {
     margin-left: 20px;
     list-style: disc;
@@ -127,13 +140,13 @@ body {
 
 
 .contact-section {
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-top: 10px; /* Adjust the margin as needed */
     padding: 20px;
     background-color: #f9f9f9; /* Set the background color for the contact window */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 10px; /* Add rounded corners */
 }
-
 .contact-window {
     background-color: #fff; /* Set background color for the contact window */
     padding: 20px;
@@ -143,44 +156,36 @@ body {
 }
 
 .footer-section {
-    margin-top: 40px; /* Adjust the margin as needed */
+    margin-top: 0px; /* Adjust the margin as needed */
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
 }
-
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-
 .footer p {
     margin: 5px;
 }
-
 .proudly-canadian p {
     font-size: 14px; /* Adjust the size as needed */
 }
 
+
 /* ... Other styling ... */
-/* ... Other styles ... */
-/* ... Other styles ... */
-
-/* ... Other styles ... */
-
-/* ... Other styles ... */
-
 /* Apply window styling */
 .window {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     text-align: center; /* Center the content */
+    border: 1px solid #ddd; /* Add border to the entire section */
 }
 
 /* Media query for bigger screens (desktop) */
@@ -220,7 +225,7 @@ body {
     }
 
     .name {
-        font-size: 40px; /* Adjust font size for bigger screens */
+        font-size: 45px; /* Adjust font size for bigger screens */
         font-weight: bold; /* Add font weight */
         margin-top: 10px; /* Add spacing above the name */
     }
@@ -228,8 +233,6 @@ body {
     .job-title {
         font-size: 24px; /* Adjust font size for bigger screens */
     }
-
-
     .social-icons {
         margin-top: 10px; /* Add spacing above social icons */
         display: flex;
@@ -247,7 +250,6 @@ body {
         background-color: #f9f9f9; /* Add a background color to the icons */
     }
 
- /* ... Other styles ... */
 
     .social-icons {
         margin-top: 10px; /* Add spacing above social icons */
@@ -273,4 +275,5 @@ body {
         width: 30px; /* Adjust the width for smaller screens */
         height: 30px; /* Adjust the height for smaller screens */
     }
+}
 }
