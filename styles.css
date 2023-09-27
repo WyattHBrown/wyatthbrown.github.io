@@ -19,6 +19,7 @@ body {
     padding: 20px;
     background-color: #f9f9f9; /* Set your desired background color */
     border-bottom: 0px solid #f9f9f9; /* Add a border at the bottom of the header */
+    transition: max-width 0.3s ease-in-out; /* Add a smooth transition for the photo size */
 }
 
 .profile-photo {
@@ -102,7 +103,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align items at the top */
-    margin: 20px auto;
+    margin: 22px auto;
     padding: 20px;
     background-color: #f3fffc; /* Set background color for the skills and achievements windows */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -113,7 +114,7 @@ body {
 .skills-window,
 .achievements-window {
     flex: 1; /* Occupy equal width for both windows */
-    padding: 20px; /* Add padding to the windows */
+    padding: 22px; /* Add padding to the windows */
 }
 .skills-window {
     border-right: 1px solid #9a9a9a; /* Add a vertical border to the right */
@@ -124,8 +125,7 @@ body {
     margin-top: 15px; /* Add spacing between heading and the achievements */
 }
 .achievements li {
-    margin-bottom: 20px; /* Add spacing between individual achievements */
-    padding: 22px;
+    margin-bottom: 23px; /* Add spacing between individual achievements */
 }
 
 .skills h2,
@@ -144,7 +144,7 @@ body {
 
 .contact-section {
     margin: 0px auto;
-    margin-top: 10px; /* Adjust the margin as needed */
+    margin-top: 5px; /* Adjust the margin as needed */
     padding: 20px;
     background-color: #f9f9f9; /* Set the background color for the contact window */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
@@ -160,7 +160,7 @@ body {
 
 .footer-section {
     margin-top: 0px; /* Adjust the margin as needed */
-    background-color: #333;
+    background-color: #b6b6b6;
     color: #fff;
     text-align: center;
     padding: 10px;
