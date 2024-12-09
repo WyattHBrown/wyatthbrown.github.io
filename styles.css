@@ -49,11 +49,12 @@ body {
 
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 20px;
+    margin-left: 25px;
 }
 .social-icons a {
-    margin-right: 10px;
+    margin-right: 15px;
     display: inline-block;
 }
 
@@ -87,6 +88,7 @@ body {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 10px; /* Add rounded corners */
     text-align: center; /* Center the content */
+    border-radius: 0.5px solid #9a9a9a;
 }
 
 
@@ -108,13 +110,14 @@ body {
     background-color: #f3fffc; /* Set background color for the skills and achievements windows */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 10px; /* Add rounded corners */
-    border: 0px solid #ddd; /* Add border to the entire section */
+    border: 1px solid #b7c6b3; /* Add border to the entire section */
 }
 
 .skills-window,
 .achievements-window {
     flex: 1; /* Occupy equal width for both windows */
     padding: 22px; /* Add padding to the windows */
+    margin-bottom: 2px; /* Adjust the margin as needed */
 }
 .skills-window {
     border-right: 1px solid #9a9a9a; /* Add a vertical border to the right */
@@ -144,9 +147,9 @@ body {
 
 .contact-section {
     margin: 0px auto;
-    margin-top: 5px; /* Adjust the margin as needed */
+    margin-top: 2px; /* Adjust the margin as needed */
     padding: 20px;
-    background-color: #f9f9f9; /* Set the background color for the contact window */
+    background-color: #ffffff; /* Set the background color for the contact window */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     border-radius: 10px; /* Add rounded corners */
 }
@@ -156,6 +159,7 @@ body {
     border-radius: 10px; /* Add rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     text-align: center; /* Center the content */
+    border: 0.5px solid #9a9a9a;
 }
 
 .footer-section {
